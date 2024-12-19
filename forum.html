@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Html Form</title>
+    <style>
+        input:checked{
+            color:red;
+            background-color: brown;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="fname"> First Name</label>
+        <input  type="text" id="fname" name="fname" placeholder="First Name" required autofocus>
+    <br>
+        <label for="lname"> Last Name</label>
+        <input  type="text" id="lname" name="lname" placeholder="Last Name" required>
+<br>
+        <label for="addr"> Addres</label>
+        <input type="text" id="addr" name="addr" placeholder="Street Addres 1" required>
+        <br>
+        <labeL for="pno"> Contact Number</labeL>
+        <input type="text" id="pno" name="pno" placeholder="(623)-232-2343" required>
+        <br>
+        <label fro="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Enter age" required min="12" max="99">
+        <br>
+        <label for="email">Enter Your Email</label>
+        <input type="email" id="email" name="emial" placeholder="name@gmail.com">
+        <br>
+        <label for="pas">Create Password</label>
+        <input type="password" id="pas " name="pas" placeholder="password"  required>
+        <br>
+        <label>Gender</label>
+        <BR>
+
+        <label for="male"> male</label>
+        <input type="radio" id="male" name="gender" required value="male">
+
+        <label for="female">female </label>
+        <input type="radio" id="female" name="gender" required value="female
+        ">
+        <br>
+        <label>Interests:</label>
+        <br>
+        <input type="checkbox" id="coding" name="interest" value="coding">
+        <label for="coding">Coding</label>
+        <br>
+        <input type="checkbox" id="music" name="interest" value="music">
+        <label for="music">Music</label>
+        <br>
+        <input type="checkbox" id="sports" name="interest" value="sports">
+        <label for="sports">Sports</label>
+        <br>
+        <label for="country">Country:</label>
+        <br>
+
+        <select id="country" name="country" required>
+    <option value="">Select your country</option>
+    <option value="us">United States</option>
+    <option value="ca">Canada</option>
+    <option value="uk">United Kingdom</option>
+    <option value="au">Australia</option>
+</select>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" cols="50"
+    placeholder="Enter your message here..."></textarea>
+    <br>
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+    <br>
+    <label for="birthday">Birthday:</label>
+<input type="date" id="birthday" name="birthday">
+<br>
+<button type="submit">Submit</button>
+    </form>
+    <br>
+   
+    
+</body>
+</html>

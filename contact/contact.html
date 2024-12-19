@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+
+
+        *{color:white
+        
+
+        }
+        body{
+            background-color: black;
+            width:98vw;
+            margin: auto;
+            
+            
+        }
+        .main{
+            width:100%;
+            display: grid;
+            grid-template-rows: 50px auto 50px;
+            
+            
+        }
+        section{
+            display: grid;
+            grid-template-columns: 47.5% 47.5%;
+            height:100%;
+            justify-content: space-around;
+            
+        }
+        area:nth-child(even){
+            background-color: #686868;
+        }
+        .area{
+            border: 12px solid white;
+            text-indent: 12px;
+            display: flex;
+            flex-direction: column;
+            
+            
+
+        }
+        iframe{
+            aspect-ratio: 1/1;
+            align-self: center;
+            margin-left: 10%;
+        }
+        label{
+            font-size: 1.5em;
+
+        }
+        input{
+            width:70%;
+            height: 30px;
+            color:black;
+            font-size: 1.2em;
+
+            
+        }
+        form{
+            
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            gap:50px;
+            font-size: 1.2em;
+            
+        }
+        form > div{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        textarea{
+            width:70%;
+            color:black;
+            font-size: 1.2em;
+        }
+        button{
+            width:70%;
+            color:black;
+            background-color: white;
+            height:40px;
+            border-radius:20px;
+            cursor: pointer;
+        }
+        @media  (max-width:768px ){
+            section{
+                grid-template-columns: none;
+                gap:20px;
+                margin-top: 20px;
+                
+            }
+            footer{
+                display: inline-flex;
+                width:100vw
+            }
+            .area{width:90%}
+            
+
+            
+            
+            
+        }
+
+    </style>
+    <link rel="stylesheet" href="main.css" >
+</head>
+<body  class="poppins-regular">
+    <div class="main" >
+
+
+        <nav class="navbar">
+            <h2>Tyler Thorne</h2>
+            <ul class="topbar">
+                <li><a href="/homepage/index.html">Home</a></li>
+                <li><a href="../projects/projects.html">Projects</a></li>
+                <li><a href="/portfolioresume/portfolio.html">Resume</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+       
+        
+        </nav>
+        <section>
+            <!--area 1-->
+            <div class="area">
+
+                <h2> Contact Me </h2>
+                <h3><a href="mailto:thornes101@gmail.com">thornes101@gmail.com</a></h3>                
+                <h3>Phone Number|623-262-0324</h3>
+                <h3>GitHub|</h3>
+                <a href="https://www.google.com/maps/place/West-MEC+-+Northwest+Campus/@33.6333703,-112.3442951,16z/data=!4m6!3m5!1s0x872b44a4c816e5af:0x61da180d51e2250b!8m2!3d33.6333703!4d-112.3442951!16s%2Fg%2F11d_7w87q5?entry=ttu&g_ep=EgoyMDI0MTIxMC4wIKXMDSoASAFQAw%3D%3D"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6643.835831791607!2d-112.34687002399822!3d33.633370273317645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b44a4c816e5af%3A0x61da180d51e2250b!2sWest-MEC%20-%20Northwest%20Campus!5e0!3m2!1sen!2sus!4v1734047973518!5m2!1sen!2sus" width="75%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a>
+
+
+            </div>
+
+            <!--area 2-->
+            <div  class="area" >
+                <form action="tthorn000@west-mec.org">
+                    <div >
+                    <label for="Name">  Name</label>
+                    <br>
+                    <input  id="Name" name="Name" type="text" placeholder="Jhon Doe" required>
+                    </diV>
+                    <div>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Example@gmail.com" required>
+
+
+                </div>
+                <div>
+                    <label for="msg"> Message</label>
+                    <textarea id="msg" name="msg" placeholder="Type Here" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>                
+            </form>
+            </diV>
+
+            </div>
+
+
+        </section>
+
+
+        <footer>
+            <a href="https://github.com/TylerThorneXTrls"><img src="/download.png" alt="github"></a>
+
+            ©2024 Tyler Thorne all right reserved
+        </footer>
+
+    </div>
+    
+</body>
+</html>

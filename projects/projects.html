@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+        }
+        .main{
+            width:100%;
+            height: auto;
+            display: grid;
+            grid-template-rows: 50px 500px auto;
+            
+            
+        }
+        body{
+            background-color: black;
+            width: 98vw;
+            margin:auto
+            
+        }
+
+        .nav{
+            background-color: black;
+            align-items: center;
+            display: flex;
+            gap:20px;
+            justify-content: center;
+            
+
+
+        }
+
+       a{
+            color: white;
+            text-decoration: none;
+        }
+    
+        
+    
+    .bigimg{
+        background-image:url(download3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    button{
+        background-color: black;
+        padding:40px;
+        border-radius: 300px;
+        border-color: white;
+        color:WHITE;
+        font-size: 3em;
+
+        
+        
+    }
+    
+    h2{text-align: center;}
+    
+    
+    .Projects{
+        margin:auto;
+        display:flex;
+        gap:20px;
+        height:auto;
+        width:90%;
+        flex-wrap:wrap;
+        justify-content: center;
+
+       
+        
+        
+    }
+    .box{
+        
+        width:40%;
+        height:240px;
+        border:6px solid white;
+        
+        
+    }
+    button a:hover{
+        color:rgb(14, 255, 62);
+        transition: 0.5s;
+    }
+
+    .box:hover{
+        border:  10px solid rgb(14, 255, 62);
+        transition: 0.5s;
+        
+        
+    }
+    .box >  a img{
+        height: 100%;
+        max-width: 50%;
+        aspect-ratio: 1/0.90;
+        
+    }
+    @media (max-width:768px){
+        .box{
+        
+        width:80%;
+        height:240px;
+        border:6px solid white;
+        
+        
+    }
+
+    }
+    
+       
+    
+   
+   
+        
+    </style>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="poppins-regular">
+    <div class="main">
+        <nav class="navbar">
+        <h2>Tyler Thorne</h2>
+        <ul class="topbar">
+            <li><a href="/homepage/index.html">Home</a></li>
+            <li><a href="../projects/projects.html">Projects</a></li>
+            <li><a href="/portfolioresume/portfolio.html">Resume</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+   
+    
+    </nav>
+        <div class="bigimg">
+            
+            <button><a href="#Newest">Newest Project</a></button>
+        </div>
+        <div class="Projects">
+                <div class="box">
+                    <a href="/resumeprojects/resumelayout3.html"><img  src="Capture.PNG" ></a>
+                </div>
+                <div class="box">
+                    <a href="/familyphotos/familyimages.html"><img  src="Capture2.PNG" ></a>
+
+                </div>
+                <div class="box">
+                    <img width="50px">
+                </div>
+                <div class="box">
+                    <img width="50px">
+                </div>
+                <div class="box">
+                    <img width="50px">
+                </div>
+                <div class="box">
+                    <img width="50px">
+                </div>
+                
+
+        </div>
+        <footer>
+            <a href="https://github.com/TylerThorneXTrls"><img src="/download.png" alt="github"></a>
+            ©2024 Tyler Thorne all right reserved
+        </footer>
+
+    </div>
+    
+</body>
+
+</html>
